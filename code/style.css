@@ -1,0 +1,111 @@
+body {
+    background-color: bisque;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: bisque;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 35px;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: chocolate;    
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: chocolate;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+.anu1 {
+    float: right;
+    width: 480px;
+    height: 600px;
+    text-align: center;
+    padding-top: 250px;
+    box-sizing: border-box;
+    background-color: lightsalmon;
+}
+
+.anu2 {
+    float: left;
+    width: 480px;
+    height: 700px;
+    padding: 25px 25px;
+    text-align: left;
+    box-sizing: border-box;
+    background-color: peru;
+}
+
+.anu3{
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.flex-container div {
+    background-color: white;
+    margin: 50px;
+    padding: 35px;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: chocolate;
+    text-align: center;
+}
