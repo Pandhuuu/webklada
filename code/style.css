@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-color: #F4EBD0;
 }
 
 .container {
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: bisque;
+    background-color: #F4EBD0;
 }
 
 header::after {
@@ -47,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-    color: chocolate;    
+    color: #D6AD60;    
 }
 
 nav a::before{
@@ -55,7 +55,7 @@ nav a::before{
     display: block;
     height: 5px;
     width: 0%;
-    background-color: chocolate;
+    background-color: #D6AD60;
     position: absolute;
     top: 0;
     transition: all ease-in-out 250ms;
@@ -66,13 +66,17 @@ nav a:hover::before{
 }
 
 .anu1 {
-    float: right;
-    width: 480px;
-    height: 600px;
+    float: none;
     text-align: center;
-    padding-top: 250px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     box-sizing: border-box;
-    background-color: lightsalmon;
+    background-color: tan;
+}
+
+.landing img {
+    margin: 100px 200px;
+    float: none;
 }
 
 .anu2 {
@@ -82,12 +86,23 @@ nav a:hover::before{
     padding: 25px 25px;
     text-align: left;
     box-sizing: border-box;
-    background-color: peru;
+    background-color: #D6AD60;
 }
 
-.anu3{
-    padding: 50px 50px;
+.anu3 {
     text-align: center;
+    margin: 100px 50px;
+}
+
+.flex-container1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    float: left;
+    padding-bottom: 100px;
+    background-color: #F4EBD0;
 }
 
 .flex-container {
@@ -100,12 +115,15 @@ nav a:hover::before{
 
 .flex-container div {
     background-color: white;
-    margin: 50px;
+    margin: 25px;
     padding: 35px;
-    font-size: 30px;
+    font-size: 10px;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
 }
 
 .footer {
-    background-color: chocolate;
+    background-color: #D6AD60;
     text-align: center;
 }
