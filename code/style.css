@@ -246,7 +246,8 @@ nav a:hover::before{
 }
 
 .footer {
-    background-color: #D6AD60;
+    background-color: #B68D40;
+    padding: 10px;
 }
 
 .title1 {
@@ -300,5 +301,22 @@ nav a:hover::before{
     font-size: 10px;
     width: 225px;
     height: 400px;
+    box-sizing: border-box;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex2 div {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    font-size: 15px;
+    width: 600px;
+    height: 500px;
     box-sizing: border-box;
 }
