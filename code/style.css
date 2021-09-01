@@ -213,19 +213,16 @@ nav a:hover::before{
     background-color: #D6AD60;
 }
 
-.anu3 {
-    text-align: center;
-    margin: 100px 50px;
-}
-
-.flex-container1{
+.container1 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
-    float: left;
-    padding-bottom: 100px;
-    background-color: #F4EBD0;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .flex-container {
