@@ -10,24 +10,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KLADA I Home</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div><a href="index.html"><img src="../img/kidscreamingatcomputer.jpg" alt="logo" class="logo" height="75px" width="150px"></a></div>
-            <div>  
-                 <nav>
-                     <ul>
-                         <li><a href="#about">About</a></li>
-                         <li><a href="gallery.html">Galeri</a></li>
-                         <li><a href="#pulau">Pulau</a></li>
-                         <li><a href="#contacts">Contact Us</a></li>
-                     </ul>
-                 </nav>
-            </div>
-        </div>
-    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#pulau">Pulau</a>
+        <a href="#contacts">Contacts</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
     <!--ini tulisan klada gede-->
     <div class="landing">
         <section class="anu1">
