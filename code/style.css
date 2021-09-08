@@ -5,14 +5,14 @@ body {
 }
 
 .topnav {
+    background-color: #B68D40;
     overflow: hidden;
-    background-color: #333;
 }
   
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -21,12 +21,13 @@ body {
   
 .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: #D6AD60;
 }
   
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #B68D40;
     color: white;
+    float: left;
 }
   
 .topnav .icon {
@@ -354,10 +355,39 @@ body {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .anu1 h1 {
         font-size: 200px;
     }
+
+    .slider {
+        margin-left: 112px;
+        margin-top: 10px;
+        width: 800px;
+        height: 500px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .nav-manual {
+        display: none;
+    }
+
+    .about img {
+        width: 647.5px;
+        height: 500px;
+        box-sizing: border-box;
+    }
+
+    .anu2 {
+        height: 500px;
+        width: 376.5px;
+        overflow: scroll;
+    }
+}
+
+
+  @media (max-width: 768px) {
 
     .slider {
         margin-left: 40px;
@@ -373,23 +403,25 @@ body {
     }
 
     .about img {
-        width: 100%;
-        height: 500px;
+        width: 518px;
+        height: 408px;
         box-sizing: border-box;
     }
 
     .anu2 {
-        height: 500px;
+        height: 408px;
+        width: 250px;
+        overflow: scroll;
     }
 }
 
-  @media (max-width: 411px) {
+@media (max-width: 540px) {
     .anu1 h1 {
         font-size: 150px;
     }
 
     .slider {
-        margin-left: 35.5px;
+        margin-left: 100px;
         margin-top: 10px;
         width: 340px;
         height: 188px;
@@ -407,14 +439,13 @@ body {
     }
 
     .anu2 {
-        height: 500px;
+        height: 300px;
+        width: 100%;
+        text-align: center;
     }
 }
 
 @media (max-width: 414px) {
-    .anu1 h1 {
-        font-size: 150px;
-    }
 
     .slider {
         margin-left: 37px;
@@ -435,14 +466,32 @@ body {
     }
 
     .anu2 {
+        height: 350px;
+    }
+}
+
+  @media (max-width: 411px) {
+
+    .slider {
+        margin-left: 35.5px;
+        margin-top: 10px;
+        width: 340px;
+        height: 188px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .nav-manual {
+        display: none;
+    }
+
+    .about img {
+        width: 100%;
         height: 500px;
     }
 }
 
 @media (max-width: 375px) {
-    .anu1 h1 {
-        font-size: 150px;
-    }
 
     .slider {
         margin-left: 10px;
@@ -462,16 +511,9 @@ body {
         height: 500px;
         box-sizing: border-box;
     }
-
-    .anu2 {
-        height: 500px;
-    }
 }
 
 @media (max-width: 360px) {
-    .anu1 h1 {
-        font-size: 150px;
-    }
 
     .slider {
         margin-left: 10px;
@@ -491,16 +533,9 @@ body {
         height: 500px;
         box-sizing: border-box;
     }
-
-    .anu2 {
-        height: 500px;
-    }
 }
 
 @media (max-width: 320px) {
-    .anu1 h1 {
-        font-size: 150px;
-    }
 
     .slider {
         margin-left: 10px;
@@ -522,7 +557,7 @@ body {
     }
 
     .anu2 {
-        height: 500px;
+        height: 400px;
     }
 }
 
