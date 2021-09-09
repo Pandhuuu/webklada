@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="home" href="index.html">
+    <link rel="galeri" href="gallery.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KLADA I Galeri</title>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="gallery.html">Galeri</a>
+    <a href="index.html#pulau">Pulau</a>
+    <a href="#contacts">Contacts</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+     <script>
+         var mybutton = document.getElementById("myBtn");
+         
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             mybutton.style.display = "block";
+           } else {
+             mybutton.style.display = "none";
+           }
+         }
+ 
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+     </script>
+    <div class="spacer layer1"></div>
+    <div class="title1">
+      <h2>Judul Baju</h2>
+    </div>
+    <div class="flex2">
+        <div class="image"><img src="../img/bajusulawesi3.jpg"></div>
+        <div class="description">Baju tersebut merupakan baju khas Sulawesi utara, lebih tepatnya di Minahasa, baju daerah tersebut memiliki 2 jenis yang 1 untuk pria terdiri dari baju baniang atau baju lengan panjang dengan atau tanpa kerah. dan 1 untuk wanita yang mulanya adalah sebuah kebaya lengan panjang berwarna putih yang bagian bawahnya agak melebar mirip dengan ikan duyung. Untuk putra bernama baju baniang dan untuk wanitanya dijuluki Karai Momo</div>
+    </div>
+      <a href="https://shopee.co.id/product/181372992/4712440493?smtt=0.0.9" target="_blank" class="buy-btn">Beli Sekarang</a>
+    <div class="spacer layer2"></div>
+    <div class="footer">
+        <h3>Contact us :</h3><br/>
+        <p>icon wa</p><br/>
+        <p>icon ig</p><br/>
+        <p>icon line</p><br/>
+        <hr>
+        <p id="contacts"><b>copyright by team anu 2021</b></p>
+        <br/>
+    </div>
+</body>
+</html>
