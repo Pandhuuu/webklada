@@ -34,6 +34,25 @@
           }
         }
         </script>
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+     <script>
+         var mybutton = document.getElementById("myBtn");
+         
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             mybutton.style.display = "block";
+           } else {
+             mybutton.style.display = "none";
+           }
+         }
+ 
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+     </script>
     <div class="title1">
         <h1>Galeri</h1>
     </div>
@@ -50,7 +69,7 @@
     </div>
     <div class="spacer layer1"></div>
     <div class="flex-gallery">
-        <a href="template.html"><div>baju1</div></a>
+        <div><a href="template.html">baju1</a></div>
         <div>baju2</div>
         <div>baju3</div>
     </div>

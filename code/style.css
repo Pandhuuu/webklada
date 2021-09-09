@@ -34,6 +34,27 @@ body {
     display: none;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #D6AD60;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+  }
+  
+  #myBtn:hover {
+    background-color: #B68D40;
+    box-shadow: 2px 2px #000;
+  }
+
 .anu1 h1 {
     font-family: 'Allison', cursive;
     font-size : 250px; 
@@ -204,10 +225,6 @@ body {
 
 /* INI KOK BISA GINI GIMANA GAPAHAM AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
 
-.container4 a{
-    opacity: 0%;
-}
-
 .container3 {
     display: flex;
     flex-direction: row;
@@ -217,7 +234,6 @@ body {
 }
 
 .container3 div {
-    background-image: url("../img/batik1.jpg");
     width: 150px;
     height: 150px;
     box-sizing: border-box;
@@ -226,14 +242,8 @@ body {
     text-align: center;
 }
 
-.container4:hover{
-    filter: brightness(100%);
-    color: aqua;
-    opacity: 100%;
-}
-
-.container4 img:hover {
-    opacity: 0%;
+.container3 img:hover {
+    filter: brightness(50%);
 }
 
 /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
@@ -265,9 +275,7 @@ body {
     font-size : 50px; 
     float: none;
     text-align: center;
-    padding-top: 100px;
     width: 100%;
-    height: 300px;
     box-sizing: border-box;
     background-color: #F4EBD0;
 }
@@ -285,7 +293,7 @@ body {
     text-align: center;
     padding-top: 1px;
     width: 100%;
-    height: 300px;
+    height: 200px;
     box-sizing: border-box;
     background-color: #B68D40;
 }
@@ -315,6 +323,7 @@ body {
 }
 
 .flex2 {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -322,13 +331,31 @@ body {
 }
 
 .flex2 div {
-    background-color: white;
     margin: 20px;
     padding: 10px;
     font-size: 15px;
     width: 600px;
-    height: 500px;
     box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.buy-btn {
+    text-align: center;
+    padding-top: 15px;
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    background-color: #D6AD60;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.buy-btn:hover {
+    box-shadow: 0px 0px 5px #000;
 }
 
 /*tinggal bikin navbar responsiv sisanya udah diurus flexbox paling cuma benerih size dikit dikit doang hehe hehe hehe hehe hehe hehe hehe hehe hehe hehe hehe heh ehe*/
@@ -361,16 +388,13 @@ body {
     }
 
     .slider {
-        margin-left: 112px;
+        margin: auto;
         margin-top: 10px;
-        width: 800px;
+        margin-bottom: 30px;
+        width: 80%;
         height: 500px;
         box-sizing: border-box;
         position: relative;
-    }
-
-    .nav-manual {
-        display: none;
     }
 
     .about img {
@@ -384,6 +408,17 @@ body {
         width: 376.5px;
         overflow: scroll;
     }
+
+    .flex2 img {
+        width: 100%;
+    }
+
+    .flex2 div {
+        width: 80%;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 
@@ -391,15 +426,8 @@ body {
 
     .slider {
         margin-left: 40px;
-        margin-top: 10px;
         width: 688px;
         height: 300px;
-        box-sizing: border-box;
-        position: relative;
-    }
-
-    .nav-manual {
-        display: none;
     }
 
     .about img {
@@ -422,15 +450,8 @@ body {
 
     .slider {
         margin-left: 100px;
-        margin-top: 10px;
         width: 340px;
         height: 188px;
-        box-sizing: border-box;
-        position: relative;
-    }
-
-    .nav-manual {
-        display: none;
     }
 
     .about img {
@@ -449,15 +470,8 @@ body {
 
     .slider {
         margin-left: 37px;
-        margin-top: 10px;
         width: 340px;
         height: 188px;
-        box-sizing: border-box;
-        position: relative;
-    }
-
-    .nav-manual {
-        display: none;
     }
 
     .about img {
@@ -474,15 +488,8 @@ body {
 
     .slider {
         margin-left: 35.5px;
-        margin-top: 10px;
         width: 340px;
         height: 188px;
-        box-sizing: border-box;
-        position: relative;
-    }
-
-    .nav-manual {
-        display: none;
     }
 
     .about img {
@@ -495,15 +502,8 @@ body {
 
     .slider {
         margin-left: 10px;
-        margin-top: 10px;
         width: 355px;
         height: 200px;
-        box-sizing: border-box;
-        position: relative;
-    }
-
-    .nav-manual {
-        display: none;
     }
 
     .about img {
@@ -517,15 +517,8 @@ body {
 
     .slider {
         margin-left: 10px;
-        margin-top: 10px;
         width: 340px;
         height: 188px;
-        box-sizing: border-box;
-        position: relative;
-    }
-
-    .nav-manual {
-        display: none;
     }
 
     .about img {
@@ -539,15 +532,8 @@ body {
 
     .slider {
         margin-left: 10px;
-        margin-top: 10px;
         width: 300px;
         height: 166px;
-        box-sizing: border-box;
-        position: relative;
-    }
-
-    .nav-manual {
-        display: none;
     }
 
     .about img {
@@ -558,6 +544,11 @@ body {
 
     .anu2 {
         height: 400px;
+    }
+
+    .title {
+        font-size: 40px;
+        height: 150px;
     }
 }
 

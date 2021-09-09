@@ -34,11 +34,34 @@
           }
         }
         </script>
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+     <script>
+         var mybutton = document.getElementById("myBtn");
+         
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             mybutton.style.display = "block";
+           } else {
+             mybutton.style.display = "none";
+           }
+         }
+ 
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+     </script>
     <div class="spacer layer1"></div>
-    <div class="flex2">
-        <div><img src="../img/batik5.jpg"></div>
-        <div>jadi in adalah sebuah batik yang berasal dari google gatau gitulah pokoknya Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, deserunt similique facere quia, dolore minus quae molestiae, architecto nulla iste cupiditate aut voluptatibus sequi veniam perferendis autem asperiores eveniet doloribus!</div>
+    <div class="title1">
+      Judul Baju
     </div>
+    <div class="flex2">
+        <div class="image"><img src="../img/batik5.jpg"></div>
+        <div class="description">Baju tersebut merupakan  baju khas sumatra yang lebih tepatnya berada di lampung, baju daerah tersebut bernama saibatin, yang dimana baju tersebut terbuat dari beludru dan memiliki bermotif floral bunga tabur, salur, atau pucuk rebung. Sebagai atribut, pengantin pria memakai kopiah tungkus atau tukkus, dan perhiasan seperti gelang dan kalung</div>
+    </div>
+      <a href="#" class="buy-btn">Beli Sekarang</a>
     <div class="spacer layer2"></div>
     <div class="footer">
         <h3>Contact us :</h3><br/>
