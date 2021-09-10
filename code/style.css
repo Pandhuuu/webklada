@@ -330,12 +330,15 @@ p {
 }
 
 .flex-gallery img {
-    background-color: white;
-    margin: 75px;
+    margin: 50px;
     font-size: 10px;
-    width: 225px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     box-sizing: border-box;
+}
+
+.hoverimg:hover {
+    box-shadow: 7px 7px 10px grey;
 }
 
 .flex2 {
@@ -379,10 +382,22 @@ p {
     box-shadow: 0px 0px 5px #000;
 }
 
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #B68D40;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.map {
+    margin-left: 350px;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: #B68D40;
     flex-wrap: wrap;
 }
 
@@ -392,13 +407,22 @@ p {
     flex-wrap: wrap;
 }
 
-.footer2 div {
-    background-color: white;
+.footer2 img {
     width: 100px;
     height: 100px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.copyright {
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 90%;
+    border-top: 2px solid #000;
+    background-color: #B68D40;
 }
 
 /*tinggal bikin navbar responsiv sisanya udah diurus flexbox paling cuma benerih size dikit dikit doang hehe hehe hehe hehe hehe hehe hehe hehe hehe hehe hehe heh ehe*/
@@ -465,6 +489,17 @@ p {
         text-align: center;
         font-size: 30px;
     }
+
+    .footer1 div {
+        transform: scale(0.9);
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
 }
 
 
@@ -487,7 +522,7 @@ p {
         width: 250px;
         overflow: scroll;
     }
-}
+  }
 
 @media (max-width: 540px) {
     .anu1 h1 {
@@ -514,6 +549,14 @@ p {
 
     .flex2 div {
         font-size: 12px;
+    }
+
+    .footer1 div {
+        transform: scale(0.8);
+    }
+
+    .copyright {
+        font-size: 10px;
     }
 }
 
