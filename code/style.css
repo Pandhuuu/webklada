@@ -506,8 +506,13 @@ p {
   @media (max-width: 768px) {
 
     .slider {
-        margin-left: 40px;
-        width: 688px;
+        margin-left: 114px;
+        width: 540px;
+        height: 300px;
+    }
+
+    .slider img {
+        width: 540px;
         height: 300px;
     }
 
@@ -531,6 +536,11 @@ p {
 
     .slider {
         margin-left: 100px;
+        width: 340px;
+        height: 188px;
+    }
+
+    .slider img {
         width: 340px;
         height: 188px;
     }
@@ -568,6 +578,11 @@ p {
         height: 188px;
     }
 
+    .slider img {
+        width: 340px;
+        height: 188px;
+    }
+
     .anu2 {
         height: 350px;
     }
@@ -581,6 +596,10 @@ p {
         height: 188px;
     }
 
+    .slider img {
+        width: 340px;
+        height: 188px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -590,12 +609,22 @@ p {
         width: 355px;
         height: 200px;
     }
+
+    .slider img {
+        width: 355px;
+        height: 200px;
+    }
 }
 
 @media (max-width: 360px) {
 
     .slider {
         margin-left: 10px;
+        width: 340px;
+        height: 188px;
+    }
+
+    .slider img {
         width: 340px;
         height: 188px;
     }
